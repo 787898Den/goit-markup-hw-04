@@ -209,8 +209,10 @@ button {
 .social-link:hover,
 .social-link :focus {
   background-color: var(--accent-color);
+  fill: var(--second-text-color);
 }
-.social-icon :hover .social-icon {
+.social-icon :hover,
+.social-icon :focus {
   fill: var(--second-text-color);
 }
 .social-icon {
@@ -421,8 +423,7 @@ button {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
-.footer-social {
-}
+
 .footer-address-link {
   margin-bottom: 9px;
 }
@@ -469,7 +470,4 @@ button {
   height: 44px;
   align-items: center;
   justify-content: center;
-}
-.footer-social-icon {
-  fill: var(--second-text-color);
 }
