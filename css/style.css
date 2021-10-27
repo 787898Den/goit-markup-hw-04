@@ -236,15 +236,14 @@ button {
   justify-content: center;
   text-align: center;
 }
+
 .clients-item {
   flex-basis: calc(100% / 6 - 30px);
   width: 170px;
   height: 92px;
   margin-right: 30px;
 }
-.clients-item :focus .clients-icon {
-  color: var(--accent-color);
-}
+
 .clients-link {
   display: flex;
   width: 100%;
@@ -253,6 +252,14 @@ button {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+}
+.clients-link {
+  background-color: var(--second-text-color);
+}
+
+.clients-icon :hover,
+.clients-icon :focus {
+  fill: var(--accent-color);
 }
 
 .clients-icon {
@@ -415,8 +422,6 @@ button {
   color: var(--second-text-color);
 }
 .footer-social {
-  width: 206px;
-  height: 80px;
 }
 .footer-address-link {
   margin-bottom: 9px;
@@ -451,7 +456,7 @@ button {
   justify-content: center;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.footer-social-item :not(:last-child) {
+.footer-social-item {
   margin-right: 10px;
 }
 .footer-social-list {
