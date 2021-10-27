@@ -205,18 +205,20 @@ button {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  color: var(--icons-fill);
+}
+
+.social-link:focus .social-icon {
+  fill: var(--accent-color);
 }
 .social-link:hover,
 .social-link :focus {
   background-color: var(--accent-color);
-  fill: var(--second-text-color);
+  color: var(--second-text-color);
 }
-.social-icon :hover,
-.social-icon :focus {
-  fill: var(--second-text-color);
-}
+
 .social-icon {
-  fill: var(--icons-fill);
+  fill: currentColor;
 }
 .clients {
   padding-bottom: 94px;
@@ -254,18 +256,21 @@ button {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-}
-.clients-link {
-  background-color: var(--second-text-color);
+  color: var(--icons-fill);
 }
 
-.clients-icon :hover,
-.clients-icon :focus {
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+}
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
   fill: var(--accent-color);
 }
-
 .clients-icon {
-  fill: var(--icons-fill);
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
 }
 
 .container-hero {
@@ -470,4 +475,7 @@ button {
   height: 44px;
   align-items: center;
   justify-content: center;
+}
+.social-link-icon {
+  color: var(--second-text-color);
 }
