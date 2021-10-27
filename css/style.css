@@ -210,7 +210,7 @@ button {
 .social-link :focus {
   background-color: var(--accent-color);
 }
-.social-link :hover .social-icon {
+.social-icon :hover .social-icon {
   fill: var(--second-text-color);
 }
 .social-icon {
@@ -242,6 +242,9 @@ button {
   height: 92px;
   margin-right: 30px;
 }
+.clients-item :focus .clients-icon {
+  color: var(--accent-color);
+}
 .clients-link {
   display: flex;
   width: 100%;
@@ -251,6 +254,7 @@ button {
   justify-content: center;
   align-items: center;
 }
+
 .clients-icon {
   fill: var(--icons-fill);
 }
@@ -395,6 +399,7 @@ button {
   padding-bottom: 60px;
 }
 .footer-address {
+  margin-right: 70px;
 }
 .footer-logo {
   display: inline-block;
@@ -409,6 +414,10 @@ button {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
+.footer-social {
+  width: 206px;
+  height: 80px;
+}
 .footer-address-link {
   margin-bottom: 9px;
 }
@@ -420,22 +429,20 @@ button {
 }
 .footer-social-title {
   display: flex;
-  text-align: center;
+  /* text-align: center; */
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  margin-bottom: 20px;
 }
-.footer-social {
+.common-container {
   display: flex;
   align-items: baseline;
-  width: 206px;
-  height: 80px;
 }
-.footer-social-link {
+.footer-social-item {
   background-color: rgba(255, 255, 255, 0.1);
-  display: flex;
   width: 44px;
   height: 44px;
   display: flex;
@@ -443,6 +450,20 @@ button {
   align-items: center;
   justify-content: center;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.footer-social-item :not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-list {
+  display: flex;
+}
+
+.footer-social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
 }
 .footer-social-icon {
   fill: var(--second-text-color);
