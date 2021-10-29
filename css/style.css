@@ -142,6 +142,7 @@ button {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
   background-color: var(--background-color-footer);
   background-repeat: no-repeat;
   background-position: center;
@@ -177,7 +178,7 @@ button {
   font-size: 18px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   color: var(--primary-title-color);
 }
 .about-text {
@@ -194,6 +195,7 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
+  margin-bottom: 16px;
 }
 .social-item {
   list-style: none;
@@ -252,7 +254,6 @@ button {
 }
 
 .clients-item {
-  flex-basis: calc(100% / 6 - 30px);
   width: 170px;
   height: 92px;
   margin-right: 30px;
@@ -304,6 +305,7 @@ button {
   padding-left: 32px;
   border-radius: 4px;
 }
+
 .heading-button:hover,
 .heading-button:focus {
   color: var(--fourth-text-color);
@@ -382,6 +384,9 @@ button {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.project-header {
+  margin-bottom: 4px;
 }
 .project-list {
   display: flex;
